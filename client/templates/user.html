@@ -1,0 +1,32 @@
+<template name="user">
+
+
+
+     
+    
+    
+    <h1>
+    Bienvenido a perfil  
+    </h1>
+
+{{#if currentUser}}
+
+
+
+       <div class="collection-item avatar">
+      <img src="http://graph.facebook.com/{{imagenface.services.facebook.id}}/picture/?type=large" class="circle responsive-img" alt="" >
+      </div>
+      <span class="title">Datos</span>
+      <p>{{imagenface.profile.name}}<br>
+         {{imagenface.services.facebook.email}}
+      </p>
+
+      {{/if}}
+
+
+     <button id="logout">Logout</button>
+    
+  
+    
+
+    </template>

@@ -7,14 +7,33 @@
 </head>
 
 <body>
-    <h1>
+    
+     <div class=" teal lighten-2 " align="center">
+    
+    
+    <h1  >
     Bienvenido a ReYou    
     </h1>
     
     <p>
     Envia y recibe Diferentes recomendaciones y elogios de forma anónima.
+
     </p>
-    
+        
+        
+        {{> loginButtons}}
+
+        {{#if currentUser}}
+
+        <button id="continueboton">
+            Continuar
+        </button>
+
+        {{/if}}
+
+
+    </div>
+
     
 </body>
     
