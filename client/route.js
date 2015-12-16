@@ -1,9 +1,9 @@
 Router.route('/', function () {
-  this.render('home');
+  this.render('Home');
 });
 
 Router.route('/user', function () {
-  this.render('user');
+  this.render('User');
 });
 
 

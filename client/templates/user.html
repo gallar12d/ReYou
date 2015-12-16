@@ -1,30 +1,97 @@
 <template name="user">
 
+ <div class="card-panel teal lighten-2">
+    
 
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="http://graph.facebook.com/{{imagenface.services.facebook.id}}/picture/?type=large"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+                  <span class="teal-text text-darken-2">Bienvenido {{imagenface.profile.name}}</span>
 
-     
+            <div class="col s10">
+            </div>
+          </div>
+        </div>
+      </div>
+
     
     
-    <h1>
-    Bienvenido a perfil  
-    </h1>
+   
+    
+    
+   
 
 {{#if currentUser}}
 
 
-
-       <div class="collection-item avatar">
-      <img src="http://graph.facebook.com/{{imagenface.services.facebook.id}}/picture/?type=large" class="circle responsive-img" alt="" >
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            
+            <div class="col s10">
+                <h4>
+                    <span class="teal-text">
+                        Email:
+                     </span>
+                </h4>
+              <span class="teal-text">
+                {{imagenface.services.facebook.email}}
+              </span>
+              <h4>
+                    <span class="teal-text">
+                        Edad:
+                     </span>
+                </h4>
+              <span class="teal-text">
+                {{imagenface.services.facebook.age_range.min}}
+              </span>
+                <h4>
+                    <span class="teal-text">
+                        Nombre:
+                     </span>
+                </h4>
+              <span class="teal-text">
+                {{imagenface.services.facebook.first_name}}
+              </span>
+              <h4>
+                    <span class="teal-text">
+                        Apellido:
+                     </span>
+                </h4>
+              <span class="teal-text">
+                {{imagenface.services.facebook.last_name}}
+              </span>
+               <h4>
+                    <span class="teal-text">
+                        Facebook:
+                     </span>
+                </h4>
+              
+                    
+              <span class="teal-text">
+                <a href="{{imagenface.services.facebook.link}}" target="_blank">Facebook Link</a>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-      <span class="title">Datos</span>
-      <p>{{imagenface.profile.name}}<br>
-         {{imagenface.services.facebook.email}}
-      </p>
+
+
+
+      
+         
+    
 
       {{/if}}
 
 
      <button id="logout">Logout</button>
+
+
+</div>
     
   
     
